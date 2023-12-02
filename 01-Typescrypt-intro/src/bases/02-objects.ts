@@ -20,3 +20,17 @@ export const charmander: Pokemon = {
   alive: true,
   moves: ["Ember", "Scratch", "Growl", "Leer"],
 };
+
+const pikachu: Pokemon = {
+  id: 25,
+  name: "Pikachu",
+  hp: 100,
+  attack: 84,
+  alive: true,
+  moves: ["Thunder Shock", "Growl", "Tail Whip", "Quick Attack"],
+};
+
+//el tipo never es un tipo que nunca va a retornar un valor válido
+export const pokemons: Pokemon[] = [];
+
+pokemons.push(charmander, pikachu);
