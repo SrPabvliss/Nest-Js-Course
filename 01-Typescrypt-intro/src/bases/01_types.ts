@@ -11,5 +11,3 @@ multinlinea
 que puede tener 'comillas simples' 
 y "comillas dobles", además de variables como \${name} = ${name}
 incluso expresiones como \${1 + 1} = ${1 + 1}`;
-
-console.log(templateString);
