@@ -8,7 +8,7 @@ import { charmander } from "./bases/03-classes";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
-    <p>${charmander.name}</p>
+    <p>${charmander.imageUrl}</p>
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </a>
