@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.ts";
 // import { name, age, templateString } from "./bases/01_types";
 // import { pokemonIds, charmander, pokemons } from "./bases/02-objects";
-import { charmander } from "./bases/03-classes";
+import { charmander } from "./bases/04-injection.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
