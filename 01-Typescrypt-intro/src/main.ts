@@ -4,18 +4,17 @@ import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.ts";
 // import { name, age, templateString } from "./bases/01_types";
 // import { pokemonIds, charmander, pokemons } from "./bases/02-objects";
-import { charmander } from "./bases/04-injection.ts";
+import { charmander } from "./bases/06-decorators2.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
-    <p>${charmander.imageUrl}</p>
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </a>
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
-    <h1>Vite + TypeScript</h1>
+    <h1>hello ${charmander.name} ${charmander.id}</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>

@@ -1,5 +1,7 @@
-import { Move } from "../interfaces/pokeapi-response.interface";
-import { PokeAPIAdapter } from "../api/pokeAPI.adapter";
+import { Move, PokeAPIResponse } from "../interfaces/pokeapi-response.interface";
+import { HttpAdapter, PokeAPIAdapter } from "../api/pokeAPI.adapter";
+
+
 
 export class Pokemon {
   get imageUrl(): string {
@@ -10,7 +12,7 @@ export class Pokemon {
     public readonly id: number,
     public name: string,
     // Todo: inyectar dependencias
-    private readonly http: PokeAPIAdapter
+    private readonly http: HttpAdapter
   ) {}
 
   scream() {
@@ -27,9 +29,8 @@ export class Pokemon {
     // );
     // console.log(data.moves);
 
-    const data = await this.http.get("https://pokeapi.co/api/v2/pokemon/4");
+    const data = await this.http.get<PokeAPIResponse>("https://pokeapi.co/api/v2/pokemon/4");
     console.log(data.moves);
-
     return data.moves;
   }
 }
