@@ -16,7 +16,7 @@
  ```
  docker-compose up -d
  ```
-
+ 5. Obtener data de una seed
 
  ## Stack usado 
  * MongoDB
